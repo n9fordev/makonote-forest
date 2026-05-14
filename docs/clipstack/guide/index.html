@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipStack Guide</title>
+    <meta
+      name="description"
+      content="An English guide to getting started with ClipStack, including launch methods, permissions, keyboard shortcuts, and basic operations."
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar">
+        <p class="eyebrow"><a class="brand-link" href="../../">Forest of Handy Tools</a></p>
+        <nav class="language-switch" aria-label="Language switcher">
+          <span class="current">English</span>
+          <span>/</span>
+          <a href="../../ja/clipstack/guide/">日本語</a>
+        </nav>
+      </div>
+      <header class="page-header">
+        <h1>ClipStack Guide</h1>
+        <p class="page-lead">
+          This page covers the basic workflow for ClipStack, including how to launch it,
+          how permissions work, and how to reuse clipboard history efficiently.
+        </p>
+      </header>
+
+      <main class="detail-grid">
+        <section class="panel">
+          <h2>ClipStack is a clipboard history tool you open only when you need it.</h2>
+          <p class="lede">
+            It stays in the menu bar most of the time. When needed, open the panel and
+            reuse copied text, links, or images without breaking your current workflow.
+          </p>
+
+          <figure class="guide-figure primary">
+            <img src="../../assets/clipstack/main.png" alt="ClipStack main panel" />
+            <figcaption>
+              Use one panel to switch between the Recent, Pinned, Links, and Images tabs.
+            </figcaption>
+          </figure>
+
+          <h3>How to launch ClipStack</h3>
+          <ul class="feature-list">
+            <li>Click the menu bar icon</li>
+            <li>Open the panel with the global hotkey</li>
+          </ul>
+
+          <figure class="guide-figure medium">
+            <img src="../../assets/clipstack/menubar.png" alt="ClipStack menu bar icon" />
+            <figcaption>
+              Look for the ClipStack icon in the upper-right menu bar area.
+            </figcaption>
+          </figure>
+
+          <p>
+            The default hotkey is <code>Control + Option + Command + V</code>.
+            You can change it later from the settings window.
+          </p>
+
+          <h3>Accessibility permission</h3>
+          <p>
+            To paste directly into another app, ClipStack needs macOS Accessibility access.
+            If the permission has not been granted yet, ClipStack shows guidance in the panel.
+          </p>
+
+          <figure class="guide-figure">
+            <img
+              src="../../assets/clipstack/accessibility-error.png"
+              alt="ClipStack message indicating Accessibility access is required"
+            />
+            <figcaption>
+              When permission is required, the panel shows an explanation and an
+              <strong>Open Settings</strong> button.
+            </figcaption>
+          </figure>
+
+          <p>
+            In System Settings, go to <strong>Privacy &amp; Security</strong> and then
+            <strong>Accessibility</strong>, and allow ClipStack.
+          </p>
+
+          <figure class="guide-figure medium">
+            <img
+              src="../../assets/clipstack/accessibility-setting.en.png"
+              alt="ClipStack enabled in Accessibility settings"
+            />
+            <figcaption>
+              Once ClipStack is enabled here, selected items can be pasted directly into the app you are using.
+            </figcaption>
+          </figure>
+
+          <h3>Basic actions</h3>
+          <ul class="feature-list">
+            <li>Click an item to reuse it</li>
+            <li>Text, links, and images can be pasted directly into the active app</li>
+            <li>If direct paste is unavailable, the selected item is still copied back to the clipboard</li>
+          </ul>
+
+          <figure class="guide-figure">
+            <img src="../../assets/clipstack/paste.png" alt="Reusing content from ClipStack" />
+            <figcaption>
+              Select an item to send it back into your workflow without manually re-copying it.
+            </figcaption>
+          </figure>
+
+          <h3>Keyboard cheat sheet</h3>
+          <table class="shortcut-table">
+            <tbody>
+              <tr>
+                <th><code>Control + Option + Command + V</code></th>
+                <td>Open the ClipStack panel</td>
+              </tr>
+              <tr>
+                <th><code>Esc</code></th>
+                <td>Close the panel</td>
+              </tr>
+              <tr>
+                <th><code>Enter</code></th>
+                <td>Reuse the selected item</td>
+              </tr>
+              <tr>
+                <th><code>↑</code> / <code>↓</code></th>
+                <td>Move between history items</td>
+              </tr>
+              <tr>
+                <th><code>←</code> / <code>→</code></th>
+                <td>Switch tabs</td>
+              </tr>
+              <tr>
+                <th><code>Command + F</code></th>
+                <td>Move focus to the search field</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>What each tab shows</h3>
+          <ul class="feature-list">
+            <li><strong>Recent</strong>: shows recent clipboard history</li>
+            <li><strong>Pinned</strong>: shows only pinned items</li>
+            <li><strong>Links</strong>: shows only items recognized as URLs</li>
+            <li><strong>Images</strong>: shows only imported image items</li>
+          </ul>
+
+          <h3>Search</h3>
+          <p>
+            The search field filters only the currently visible tab.
+            For example, searching while the Links tab is active narrows down links only.
+          </p>
+
+          <figure class="guide-figure">
+            <img src="../../assets/clipstack/pin-and-search.png" alt="Using search and pinning in ClipStack" />
+            <figcaption>
+              Search and pinning work well together when you want to keep frequently used items close at hand.
+            </figcaption>
+          </figure>
+
+          <h3>Pinning and deleting items</h3>
+          <p>
+            You can keep important items pinned and remove items you no longer need directly from the list.
+          </p>
+
+          <div class="guide-figure-row">
+            <figure class="guide-figure">
+              <img src="../../assets/clipstack/pin-gesture.png" alt="Swipe gesture for pinning" />
+            </figure>
+
+            <figure class="guide-figure">
+              <img src="../../assets/clipstack/delete-gesture.png" alt="Swipe gesture for deleting" />
+            </figure>
+          </div>
+
+          <p>
+            Swipe right to Pin or Unpin an item, and swipe left to Delete it.
+          </p>
+
+          <p>
+            If swipe gestures are not convenient, you can also use the context menu by right-clicking an item.
+          </p>
+
+          <figure class="guide-figure compact">
+            <img src="../../assets/clipstack/right-click-menu.png" alt="Context menu actions in ClipStack" />
+            <figcaption>
+              The context menu includes actions such as pinning, deleting, and opening links.
+            </figcaption>
+          </figure>
+
+          <h3>Image preview</h3>
+          <p>
+            Hover over the preview icon on an image item to open a quick preview.
+            This is useful when you want to confirm the image before reusing it.
+          </p>
+
+          <figure class="guide-figure">
+            <img src="../../assets/clipstack/image-preview.png" alt="Previewing an image in ClipStack" />
+            <figcaption>
+              Image items can be previewed before you paste or reuse them.
+            </figcaption>
+          </figure>
+
+          <h3>Opening links</h3>
+          <p>
+            Items recognized as URLs can be opened in your browser from the trailing icon or the context menu.
+            This is useful when you want to check a link immediately instead of pasting it first.
+          </p>
+
+          <figure class="guide-figure compact">
+            <img src="../../assets/clipstack/open-link.png" alt="Opening a link from ClipStack" />
+            <figcaption>
+              Link items can be opened directly, separate from the normal paste action.
+            </figcaption>
+          </figure>
+
+          <div class="support-note">
+            Even without Accessibility permission, ClipStack still puts the selected content back onto the clipboard
+            so it remains available for manual paste.
+          </div>
+
+          <h3>What you can change in Settings</h3>
+          <ul class="feature-list">
+            <li>Whether history is saved between launches</li>
+            <li>History limit presets (20 / 50 / 100 / 200)</li>
+            <li>Global hotkey presets</li>
+            <li>Clearing all saved history</li>
+          </ul>
+        </section>
+
+        <aside class="panel">
+          <p class="section-kicker">Related pages</p>
+          <h2>See also</h2>
+          <div class="button-row">
+            <a class="button-secondary" href="../">About ClipStack</a>
+            <a class="button-secondary" href="../support/">Support</a>
+            <a class="button-secondary" href="../privacy/">Privacy Policy</a>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="site-footer">
+        <div class="nav-links">
+          <a class="text-link" href="../../">Back to apps</a>
+          <a class="text-link" href="../">ClipStack</a>
+          <a class="text-link" href="../support/">Support</a>
+          <a class="text-link" href="../privacy/">Privacy</a>
+        </div>
+        <p>© 2026 n9fordev. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

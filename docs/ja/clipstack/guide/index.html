@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipStack 使い方ガイド</title>
+    <meta
+      name="description"
+      content="ClipStack の基本的な使い方、権限設定、設定項目をまとめた日本語ガイドです。"
+    />
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar">
+        <p class="eyebrow"><a class="brand-link" href="../../">孫の手の森</a></p>
+        <nav class="language-switch" aria-label="言語">
+          <a href="../../../clipstack/guide/">English</a>
+          <span>/</span>
+          <span class="current">日本語</span>
+        </nav>
+      </div>
+      <header class="page-header">
+        <h1>ClipStack 使い方ガイド</h1>
+        <p class="page-lead">
+          ClipStack を初めて使う方向けに、起動方法、権限設定、基本操作、設定項目をまとめています。
+        </p>
+      </header>
+
+      <main class="detail-grid">
+        <section class="panel">
+          <h2>ClipStack は、必要なときだけ開いて使うクリップボード履歴ツールです。</h2>
+          <p class="lede">
+            普段はメニューバーに常駐し、必要なタイミングでパネルを開いて、
+            コピー済みのテキスト、リンク、画像を再利用する使い方を想定しています。
+          </p>
+
+          <figure class="guide-figure primary">
+            <img src="../../../assets/clipstack/main.png" alt="ClipStack のメインパネル" />
+            <figcaption>
+              Recent / Pinned / Links / Images の各タブを 1 つのパネルから切り替えて使います。
+            </figcaption>
+          </figure>
+
+          <h3>起動方法</h3>
+          <ul class="feature-list">
+            <li>メニューバーのアイコンをクリックして開く</li>
+            <li>グローバルホットキーで開く</li>
+          </ul>
+
+          <figure class="guide-figure medium">
+            <img src="../../../assets/clipstack/menubar.png" alt="ClipStack のメニューバーアイコンの位置" />
+            <figcaption>
+              メニューバーから開くときは、右上にある ClipStack のアイコンを目印にします。
+            </figcaption>
+          </figure>
+
+          <p>
+            初期設定のホットキーは
+            <code>Control + Option + Command + V</code> です。
+            ホットキーは設定画面から変更できます。
+          </p>
+
+          <h3>アクセシビリティの設定</h3>
+          <p>
+            他アプリへ直接貼り付けるには、macOS のアクセシビリティ権限が必要です。
+            初回利用時や未許可の状態では、ClipStack に案内が表示されます。
+          </p>
+
+          <figure class="guide-figure">
+            <img src="../../../assets/clipstack/accessibility-error.png" alt="アクセシビリティ権限が必要なときの表示" />
+            <figcaption>
+              権限が必要なときは、パネル内に案内が表示されます。
+              <strong>Open Settings</strong> から設定画面を開けます。
+            </figcaption>
+          </figure>
+
+          <p>
+            設定画面が開いたら、<strong>プライバシーとセキュリティ</strong> の
+            <strong>アクセシビリティ</strong> で ClipStack を許可してください。
+          </p>
+
+          <figure class="guide-figure medium">
+            <img src="../../../assets/clipstack/accessibility-setting.ja.png" alt="アクセシビリティ設定で ClipStack を許可した状態" />
+            <figcaption>
+              ClipStack をオンにすると、選択した項目を利用中のアプリへ直接貼り付けられるようになります。
+            </figcaption>
+          </figure>
+
+          <h3>基本操作</h3>
+          <ul class="feature-list">
+            <li>項目をクリックすると、その内容を再利用できます</li>
+            <li>テキストやリンク・画像は、利用中のアプリへ直接貼り付けます</li>
+            <li>直接貼り付けできない場合でも、選択した内容はクリップボードへ戻されます</li>
+          </ul>
+
+          <figure class="guide-figure">
+            <img src="../../../assets/clipstack/paste.png" alt="ClipStack から内容を再利用している様子" />
+            <figcaption>
+              項目を選ぶと、内容を戻してそのまま作業中のアプリへ使い直せます。
+            </figcaption>
+          </figure>
+
+          <h3>キーボード操作</h3>
+          <table class="shortcut-table">
+            <tbody>
+              <tr>
+                <th><code>Control + Option + Command + V</code></th>
+                <td>ClipStack のパネルを開きます</td>
+              </tr>
+              <tr>
+                <th><code>Esc</code></th>
+                <td>パネルを閉じます</td>
+              </tr>
+              <tr>
+                <th><code>Enter</code></th>
+                <td>選択中の項目を再利用します</td>
+              </tr>
+              <tr>
+                <th><code>↑</code> / <code>↓</code></th>
+                <td>履歴項目を移動します</td>
+              </tr>
+              <tr>
+                <th><code>←</code> / <code>→</code></th>
+                <td>タブを切り替えます</td>
+              </tr>
+              <tr>
+                <th><code>Command + F</code></th>
+                <td>検索欄へ移動します</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>各タブの見方</h3>
+          <ul class="feature-list">
+            <li><strong>Recent</strong>: 直近の履歴を表示します</li>
+            <li><strong>Pinned</strong>: ピン留めした項目だけを表示します</li>
+            <li><strong>Links</strong>: URL として判定された項目だけを表示します</li>
+            <li><strong>Images</strong>: 画像として取り込まれた項目だけを表示します</li>
+          </ul>
+
+          <h3>検索</h3>
+          <p>
+            上部の検索欄では、表示中のタブに対して絞り込みが行われます。
+            たとえば Links タブで検索すれば、リンクだけを対象に絞り込めます。
+          </p>
+
+          <figure class="guide-figure">
+            <img src="../../../assets/clipstack/pin-and-search.png" alt="検索とピン留めを使っている様子" />
+            <figcaption>
+              検索とピン留めを組み合わせると、よく使う内容へ素早く戻れます。
+            </figcaption>
+          </figure>
+
+          <h3>ピン留めと削除</h3>
+          <p>
+            よく使う項目はピン留めして残しておけます。不要な項目は、
+            スワイプ操作でその場で削除できます。
+          </p>
+
+          <div class="guide-figure-row">
+            <figure class="guide-figure">
+              <img src="../../../assets/clipstack/pin-gesture.png" alt="ピン留めのスワイプ操作" />
+            </figure>
+
+            <figure class="guide-figure">
+              <img src="../../../assets/clipstack/delete-gesture.png" alt="削除のスワイプ操作" />
+            </figure>
+          </div>
+
+          <p>
+            右にスワイプすると Pin / Unpin、左にスワイプすると Delete を実行できます。
+          </p>
+
+          <p>
+            スワイプしにくい場合は、右クリックメニューから操作することもできます。
+          </p>
+
+          <figure class="guide-figure compact">
+            <img src="../../../assets/clipstack/right-click-menu.png" alt="右クリックメニューからの操作" />
+            <figcaption>
+              右クリックメニューからは、ピン留め、削除、リンクを開く操作などを行えます。
+            </figcaption>
+          </figure>
+
+          <h3>画像のプレビュー</h3>
+          <p>
+            画像項目のプレビューアイコンにマウスを乗せると、
+            簡易プレビューが表示されます。貼り付けや再利用の前に、
+            内容を確認したいときに便利です。
+          </p>
+
+          <figure class="guide-figure">
+            <img src="../../../assets/clipstack/image-preview.png" alt="画像プレビューを表示している様子" />
+            <figcaption>
+              画像はホバーで簡易プレビューできるので、貼り付け前に中身を確認できます。
+            </figcaption>
+          </figure>
+
+          <h3>リンクを開く</h3>
+          <p>
+            URL として判定された項目は、右側のアイコンや右クリックメニューから
+            そのままブラウザで開けます。貼り付けるだけでなく、
+            すぐ確認したいリンクを開く用途にも使えます。
+          </p>
+
+          <figure class="guide-figure compact">
+            <img src="../../../assets/clipstack/open-link.png" alt="リンクを開く操作" />
+            <figcaption>
+              リンク項目では、貼り付けとは別にブラウザで開く操作も使えます。
+            </figcaption>
+          </figure>
+
+          <div class="support-note">
+            権限がない場合でも、ClipStack は内容をクリップボードへ戻し、
+            手動貼り付けできる状態までは維持します。
+          </div>
+
+          <h3>設定で変更できること</h3>
+          <ul class="feature-list">
+            <li>履歴を再起動後も保存するかどうか</li>
+            <li>保存件数の上限（20 / 50 / 100 / 200）</li>
+            <li>グローバルホットキーのプリセット</li>
+            <li>履歴の全削除</li>
+          </ul>
+        </section>
+
+        <aside class="panel">
+          <p class="section-kicker">関連ページ</p>
+          <h2>あわせて見る</h2>
+          <div class="button-row">
+            <a class="button-secondary" href="../">ClipStack について</a>
+            <a class="button-secondary" href="../support/">サポート</a>
+            <a class="button-secondary" href="../privacy/">プライバシーポリシー</a>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="site-footer">
+        <div class="nav-links">
+          <a class="text-link" href="../../">アプリ一覧へ戻る</a>
+          <a class="text-link" href="../">ClipStack</a>
+          <a class="text-link" href="../support/">サポート</a>
+          <a class="text-link" href="../privacy/">プライバシー</a>
+        </div>
+        <p>© 2026 n9fordev. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
