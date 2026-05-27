@@ -192,8 +192,30 @@
             <li>Whether history is saved between launches</li>
             <li>History limit presets (20 / 50 / 100 / 200)</li>
             <li>Global hotkey presets</li>
+            <li>Whether <a href="../clipstackclient/">ClipStackClient</a> is updated automatically</li>
+            <li>Whether ClipStackClient sync is enabled</li>
             <li>Clearing all saved history</li>
           </ul>
+
+          <h3>ClipStackClient sync</h3>
+          <p>
+            ClipStack can optionally upload encrypted text history to CloudKit
+            so <a href="../clipstackclient/">ClipStackClient</a> on iPhone or iPad can read it.
+          </p>
+          <p>
+            In Settings, turn on <strong>Sync with ClipStackClient</strong> to
+            enable automatic updates whenever history changes.
+          </p>
+
+          <figure class="guide-figure medium">
+            <img
+              src="../../assets/clipstack/ios-setting-on.png"
+              alt="ClipStack settings showing ClipStackClient sync enabled"
+            />
+            <figcaption>
+              When this setting is on, ClipStack updates ClipStackClient automatically through CloudKit.
+            </figcaption>
+          </figure>
         </section>
 
         <aside class="panel">
@@ -201,6 +223,7 @@
           <h2>See also</h2>
           <div class="button-row">
             <a class="button-secondary" href="../">About ClipStacks</a>
+            <a class="button-secondary" href="../../clipstackclient/">ClipStackClient</a>
             <a class="button-secondary" href="../support/">Support</a>
             <a class="button-secondary" href="../privacy/">Privacy Policy</a>
           </div>

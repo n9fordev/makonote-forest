@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipStackClient Guide</title>
+    <meta
+      name="description"
+      content="An English guide to setting up ClipStackClient, including CloudKit sync, shared key setup, and everyday use."
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar">
+        <p class="eyebrow"><a class="brand-link" href="../../">Forest of Handy Tools</a></p>
+        <nav class="language-switch" aria-label="Language switcher">
+          <span class="current">English</span>
+          <span>/</span>
+          <a href="../../ja/clipstackclient/guide/">日本語</a>
+        </nav>
+      </div>
+      <header class="page-header">
+        <h1>ClipStackClient Guide</h1>
+        <p class="page-lead">
+          This page explains the basic setup for ClipStackClient, including
+          how to connect it to ClipStack on macOS and how to load synced text
+          on iPhone or iPad.
+        </p>
+      </header>
+
+      <main class="detail-grid">
+        <section class="panel">
+          <h2>ClipStackClient is built around a simple flow.</h2>
+          <p class="lede">
+            Keep ClipStack on your Mac as the main place where history is
+            collected, then use ClipStackClient to view and copy that synced
+            text on iPhone or iPad.
+          </p>
+
+          <div class="warning-note">
+            <strong>Notice:</strong> ClipStackClient requires
+            <a href="../../clipstack/">ClipStack</a> on macOS.<br />
+            It does not collect clipboard history by itself. It reads the
+            synced history uploaded by the Mac app.
+          </div>
+
+          <h3>Initial setup</h3>
+          <ol class="feature-list">
+            <li>On your Mac, open ClipStack Settings and turn on <strong>Sync with ClipStackClient</strong>.</li>
+            <li>Keep iCloud Keychain turned on for both your Mac and your iPhone or iPad.</li>
+            <li>Return to the main screen and update to load the latest synced text.</li>
+          </ol>
+
+          <figure class="guide-figure medium">
+            <img
+              src="../../assets/clipstack/ios-setting-on.png"
+              alt="ClipStack settings showing ClipStackClient sync enabled"
+            />
+            <figcaption>
+              Turn on <strong>Sync with ClipStackClient</strong>. ClipStack
+              then uploads encrypted history to CloudKit and shares the sync
+              key through iCloud Keychain when available.
+            </figcaption>
+          </figure>
+
+          <p>
+            If you turn this switch off later, ClipStack stops updating
+            ClipStackClient through CloudKit.
+          </p>
+
+          <h3>Main history view</h3>
+          <ul class="feature-list">
+            <li>Tap a row to copy it immediately</li>
+            <li>Use search to narrow down the visible list</li>
+            <li>Switch between All, Pinned, and URLs</li>
+            <li>Use pull-to-refresh or the toolbar update button to check for changes</li>
+          </ul>
+
+          <figure class="guide-figure primary narrow">
+            <img
+              src="../../assets/clipstackclient/main_light.jpg"
+              alt="ClipStackClient main history screen"
+            />
+            <figcaption>
+              Search, sync status, filter tabs, and the clip list stay together
+              on the main history screen.
+            </figcaption>
+          </figure>
+
+          <h3>Pinned tab</h3>
+          <p>
+            The Pinned tab is useful when you want to keep a small set of
+            important items ready on mobile.
+          </p>
+
+          <figure class="guide-figure medium narrow">
+            <img
+              src="../../assets/clipstackclient/pinned.jpg"
+              alt="ClipStackClient pinned tab"
+            />
+            <figcaption>
+              Pinned items from the Mac side appear in a focused list on iPhone.
+            </figcaption>
+          </figure>
+
+          <h3>URLs tab</h3>
+          <p>
+            The URLs tab helps when you mainly want to move links between your
+            Mac and iPhone without looking through every text item.
+          </p>
+
+          <figure class="guide-figure medium narrow">
+            <img
+              src="../../assets/clipstackclient/url.jpg"
+              alt="ClipStackClient URLs tab"
+            />
+            <figcaption>
+              Links are grouped into their own view for faster browsing and copying.
+            </figcaption>
+          </figure>
+
+          <h3>What the sync status card means</h3>
+          <ul class="feature-list">
+            <li><strong>Up to date</strong>: the latest refresh succeeded</li>
+            <li><strong>Syncing</strong>: the app is checking CloudKit for updates</li>
+            <li><strong>Sync failed</strong>: the app could not load the latest synced history</li>
+            <li><strong>Sync key unavailable</strong>: the shared iCloud Keychain key has not arrived yet</li>
+          </ul>
+
+          <div class="support-note">
+            ClipStackClient does not edit history on the iPhone side in the
+            current release.<br />
+            Pinning, deleting, and updating the sync file still happen in
+            ClipStack on your Mac.
+          </div>
+
+          <h3>Settings overview</h3>
+          <ul class="feature-list">
+            <li>Check whether a sync key is currently imported</li>
+            <li>Check whether the shared sync key is available</li>
+            <li>Review the current sync source and last sync time</li>
+            <li>Open support and privacy information</li>
+          </ul>
+        </section>
+
+        <aside class="panel">
+          <p class="section-kicker">Related pages</p>
+          <h2>See also</h2>
+          <div class="button-row">
+            <a class="button-secondary" href="../">About ClipStackClient</a>
+            <a class="button-secondary" href="../../clipstack/">ClipStack</a>
+            <a class="button-secondary" href="../support/">Support</a>
+            <a class="button-secondary" href="../privacy/">Privacy Policy</a>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="site-footer">
+        <div class="nav-links">
+          <a class="text-link" href="../../">Back to apps</a>
+          <a class="text-link" href="../">ClipStackClient</a>
+          <a class="text-link" href="../support/">Support</a>
+          <a class="text-link" href="../privacy/">Privacy</a>
+        </div>
+        <p>© 2026 n9fordev. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

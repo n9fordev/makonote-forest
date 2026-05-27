@@ -212,8 +212,22 @@ h3 {
 .app-title-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   gap: 12px;
+  margin-bottom: 12px;
+}
+
+.app-title-row h1,
+.app-title-row h2 {
+  margin: 0;
+}
+
+.app-title-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  flex: 0 0 auto;
+  margin-top: 1px;
 }
 
 .feature-list,
@@ -266,6 +280,10 @@ h3 {
 
 .guide-figure.primary img {
   width: min(100%, 600px);
+}
+
+.guide-figure.narrow img {
+  width: min(100%, 300px);
 }
 
 .guide-figure figcaption {
@@ -348,6 +366,18 @@ h3 {
   border-left: 3px solid var(--accent);
   background: var(--accent-soft);
   color: var(--ink);
+}
+
+.warning-note {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-left: 3px solid #c83b3b;
+  background: #fff4f4;
+  color: #8f1f1f;
+}
+
+.warning-note strong {
+  color: #8f1f1f;
 }
 
 .site-footer {

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ClipStacks Support</title>
+    <title>ClipStackClient Support</title>
     <meta
       name="description"
-      content="Support information and common questions for ClipStacks."
+      content="Support information and common questions for ClipStackClient."
     />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
@@ -17,15 +17,15 @@
         <nav class="language-switch" aria-label="Language switcher">
           <span class="current">English</span>
           <span>/</span>
-          <a href="../../ja/clipstack/support/">日本語</a>
+          <a href="../../ja/clipstackclient/support/">日本語</a>
         </nav>
       </div>
       <header class="page-header">
         <p class="eyebrow">Support</p>
-        <h1>ClipStacks Support</h1>
+        <h1>ClipStackClient Support</h1>
         <p class="page-lead">
-          Support notes for using ClipStacks on macOS,<br />
-          including clipboard behavior and current limitations.
+          Support notes for using ClipStackClient on iPhone and iPad,<br />
+          including setup, sync behavior, and encryption key questions.
         </p>
       </header>
 
@@ -35,38 +35,41 @@
           <h2>Common support topics</h2>
 
           <div class="faq-list">
-            <h3>How do I reuse an item?</h3>
+            <h3>No clips appear after installing the app</h3>
             <p>
-              Selecting an item copies it back to the clipboard.
-              Paste it into the app you are using with <code>Command-V</code>.
+              ClipStackClient depends on a Mac already running ClipStack.
+            </p>
+            <p>
+              First, make sure ClipStack on macOS is set to sync with
+              ClipStackClient through CloudKit. Then update the main screen in
+              ClipStackClient after iCloud Keychain has shared the sync key.
             </p>
 
-            <h3>Screenshots do not appear in history</h3>
+            <h3>The app says the encryption key is missing</h3>
             <p>
-              ClipStacks can import screenshots only when they are copied to the
-              clipboard as images.<br />
-              Screenshots saved only as files are not imported automatically.
+              ClipStackClient needs the shared sync key from iCloud Keychain.
+            </p>
+            <p>
+              Make sure both devices use the same Apple Account and have iCloud
+              Keychain turned on. Then open ClipStackClient again and refresh.
             </p>
 
-            <h3>Where is clipboard history stored?</h3>
+            <h3>The app says iCloud is unavailable</h3>
             <p>
-              Clipboard history is stored locally on your Mac.<br />
-              The current release does not require an account and does not sync
-              clipboard history to a developer-operated server.
+              The current release reads synced history from CloudKit and waits
+              for the sync key through iCloud Keychain.<br />
+              Make sure iCloud and iCloud Keychain are enabled on the device
+              and that the same Apple Account is being used for the synced
+              environment.
             </p>
 
-            <h3>How does <a href="../clipstackclient/">ClipStackClient</a> sync work?</h3>
+            <h3>Can ClipStackClient collect iPhone clipboard history by itself?</h3>
             <p>
-              ClipStack can upload encrypted text history to CloudKit for
-              ClipStackClient.
-            </p>
-            <p>
-              Turn on <strong>Sync with ClipStackClient</strong> in Settings, and
-              keep iCloud Keychain enabled so ClipStackClient can read the
-              synced contents.
+              No. The current release is a viewer and copy app for the
+              Mac app only.<br />
+              It does not run as a standalone iPhone clipboard recorder.
             </p>
           </div>
-
         </section>
 
         <aside class="panel">
@@ -77,7 +80,7 @@
           </p>
 
           <div class="button-row">
-            <a class="button-secondary" href="../">About ClipStacks</a>
+            <a class="button-secondary" href="../">About ClipStackClient</a>
             <a class="button-secondary" href="../guide/">How to use</a>
             <a class="button-secondary" href="../privacy/">Privacy Policy</a>
           </div>
@@ -87,7 +90,7 @@
       <footer class="site-footer">
         <div class="nav-links">
           <a class="text-link" href="../../">Back to apps</a>
-          <a class="text-link" href="../">ClipStacks</a>
+          <a class="text-link" href="../">ClipStackClient</a>
           <a class="text-link" href="../guide/">How to use</a>
           <a class="text-link" href="../privacy/">Privacy</a>
         </div>

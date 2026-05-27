@@ -63,8 +63,11 @@
           <p>
             ClipStacks はユーザーアカウントを必要としません。<br />
             現在のリリースでは、
-            クリップボード履歴をリモートサーバーへ送信したり、
-            デバイス間で同期したりしません。
+            クリップボード履歴を開発者が運用するリモートサーバーへ送信しません。
+          </p>
+          <p>
+            ただし、設定で <a href="../clipstackclient/">ClipStackClient</a> 連携を有効にした場合は、
+            利用中の CloudKit private database へ、暗号化されたテキスト同期データを書き出します。
           </p>
 
           <h3>第三者提供</h3>
@@ -98,7 +101,7 @@
             </div>
             <div>
               <dt>リモート同期</dt>
-              <dd>なし</dd>
+              <dd>ClipStackClient 向けの CloudKit 同期に任意対応</dd>
             </div>
             <div>
               <dt>施行日</dt>
