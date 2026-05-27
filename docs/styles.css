@@ -151,6 +151,156 @@ h3 {
   padding: 24px 26px;
 }
 
+.app-showcase {
+  margin-top: 26px;
+}
+
+.showcase-card {
+  position: relative;
+  overflow: hidden;
+  padding: 18px 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 253, 0.96));
+  box-shadow:
+    0 18px 44px rgba(27, 39, 55, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.showcase-card::before,
+.showcase-card::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.showcase-card::before {
+  width: 140px;
+  height: 140px;
+  top: -42px;
+  right: -24px;
+  background: radial-gradient(circle, rgba(15, 76, 129, 0.12), rgba(15, 76, 129, 0));
+}
+
+.showcase-card::after {
+  width: 180px;
+  height: 180px;
+  bottom: -70px;
+  left: -40px;
+  background: radial-gradient(circle, rgba(15, 76, 129, 0.08), rgba(15, 76, 129, 0));
+}
+
+.showcase-track {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  padding: 14px;
+  background: linear-gradient(180deg, #fbfcff, #eef3f8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.showcase-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.showcase-card.is-phone .showcase-track {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.showcase-slides {
+  display: flex;
+  transition: transform 260ms ease;
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+.showcase-slide {
+  flex: 0 0 100%;
+}
+
+.showcase-frame {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(197, 204, 211, 0.8);
+  background: #fff;
+  box-shadow: 0 16px 30px rgba(31, 35, 40, 0.12);
+}
+
+.showcase-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.showcase-controls {
+  position: absolute;
+  inset: 50% 10px auto 10px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.showcase-arrow {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(197, 204, 211, 0.88);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1;
+  box-shadow: 0 8px 18px rgba(31, 35, 40, 0.12);
+  cursor: pointer;
+}
+
+.showcase-arrow:hover {
+  background: #fff;
+}
+
+.showcase-dots {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.showcase-dots span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(91, 99, 109, 0.22);
+  transition: all 180ms ease;
+}
+
+.showcase-dots button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.showcase-dots button[aria-current="true"] span {
+  width: 22px;
+  background: var(--accent);
+}
+
 .card-actions,
 .button-row,
 .nav-links,
@@ -416,5 +566,22 @@ h3 {
 
   .guide-figure-row {
     grid-template-columns: 1fr;
+  }
+
+  .showcase-card {
+    padding: 14px 14px 18px;
+  }
+
+  .showcase-card.is-phone .showcase-track {
+    max-width: 300px;
+  }
+
+  .showcase-controls {
+    inset-inline: 6px;
+  }
+
+  .showcase-arrow {
+    width: 32px;
+    height: 32px;
   }
 }

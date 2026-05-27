@@ -23,7 +23,6 @@
       <header class="page-header">
         <p class="eyebrow">macOS アプリ</p>
         <div class="app-title-row">
-          <h1>ClipStacks</h1>
           <img class="app-title-icon" src="../../assets/clipstack/app-icon.png" alt="ClipStacks のアプリアイコン" />
           <h1>ClipStacks</h1>
         </div>
@@ -36,6 +35,41 @@
           <a class="button-secondary" href="./privacy/">プライバシーポリシー</a>
         </div>
       </header>
+
+      <section class="app-showcase" aria-label="ClipStacks 紹介画像">
+        <div class="showcase-card" data-showcase-carousel>
+          <div class="showcase-track">
+            <div class="showcase-controls" aria-hidden="true">
+              <button class="showcase-arrow" type="button" data-carousel-prev>&larr;</button>
+              <button class="showcase-arrow" type="button" data-carousel-next>&rarr;</button>
+            </div>
+            <div class="showcase-viewport">
+              <div class="showcase-slides">
+                <div class="showcase-slide">
+                  <div class="showcase-frame">
+                    <img src="../../assets/clipstack/store/search-ja.png" alt="ClipStacks の検索機能紹介画像" />
+                  </div>
+                </div>
+                <div class="showcase-slide">
+                  <div class="showcase-frame">
+                    <img src="../../assets/clipstack/store/pin-ja.png" alt="ClipStacks のピン留め機能紹介画像" />
+                  </div>
+                </div>
+                <div class="showcase-slide">
+                  <div class="showcase-frame">
+                    <img src="../../assets/clipstack/store/hero-ja.png" alt="ClipStacks のストア向け紹介画像" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-dots">
+              <button type="button" data-carousel-dot aria-label="スライド1を表示"><span></span></button>
+              <button type="button" data-carousel-dot aria-label="スライド2を表示"><span></span></button>
+              <button type="button" data-carousel-dot aria-label="スライド3を表示"><span></span></button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <main class="detail-grid">
         <section class="panel">
@@ -101,5 +135,6 @@
         <p>© 2026 n9fordev. All rights reserved.</p>
       </footer>
     </div>
+    <script src="../../showcase-carousel.js"></script>
   </body>
 </html>
