@@ -24,7 +24,7 @@
         <p class="eyebrow">プライバシーポリシー</p>
         <h1>ClipStackClient プライバシーポリシー</h1>
         <p class="page-lead">
-          ClipStackClient は、macOS 版 ClipStack の連携アプリとして設計されています。<br />
+          ClipStackClient は、端末上のローカル保存と macOS 版 ClipStack との任意同期に対応しています。<br />
           このページでは、現在のリリースにおける iPhone/iPad 上でのデータの扱いを説明します。
         </p>
       </header>
@@ -35,13 +35,14 @@
           <h2>概要</h2>
           <p>
             ClipStackClient はユーザーのプライバシーを尊重します。<br />
-            アプリは、macOS 版 ClipStack が生成した暗号化済みの同期データを読み込み、
-            iPhone/iPad 上で同期テキスト履歴を閲覧・コピーできるようにします。
+            アプリは、ユーザーが端末上で保存したローカルクリップと、
+            macOS 版 ClipStack が生成した暗号化済みの同期データを扱います。
           </p>
 
           <h3>アプリが扱う情報</h3>
           <ul class="policy-list">
             <li>ClipStack から同期されたテキスト履歴</li>
+            <li>ユーザーがこの端末に保存したローカルテキストクリップ</li>
             <li>同期データに含まれる各種メタデータ</li>
             <li>iCloud Keychain 経由で利用可能になる同期用暗号鍵</li>
             <li>同期失敗時の fallback 用として保持される暗号化キャッシュ</li>
@@ -49,14 +50,19 @@
 
           <h3>現在の同期方式</h3>
           <p>
-            現在のリリースでは、CloudKit private database 上の同期内容を読み込みます。<br />
+            Mac 側の同期機能を有効にした場合、現在のリリースではユーザーの iCloud 上にある同期内容を読み込みます。<br />
             ClipStackClient は、開発者が運用するサーバーへ
             クリップボード履歴をアップロードしません。
           </p>
 
           <h3>ローカル保存</h3>
           <p>
-            最新の同期内容を再表示できるように、
+            ユーザーが New Clip 画面から保存したテキストは、
+            この端末上のアプリ用ストレージに保存されます。
+            設定画面からローカルクリップを全削除できます。
+          </p>
+          <p>
+            また、最新の同期内容を再表示できるように、
             アプリは暗号化済み同期データのローカルキャッシュを保持する場合があります。
           </p>
           <p>
@@ -79,6 +85,7 @@
           <h3>ユーザーの選択</h3>
           <ul class="policy-list">
             <li>Mac 側の ClipStack で ClipStackClient 同期をオフにする</li>
+            <li>ClipStackClient の設定画面からローカルクリップを削除する</li>
             <li>iCloud Keychain を無効にする、または同期運用をやめる</li>
             <li>Mac 側 ClipStack から同期内容を削除・変更する</li>
           </ul>

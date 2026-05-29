@@ -6,7 +6,7 @@
     <title>ClipStackClient Guide</title>
     <meta
       name="description"
-      content="An English guide to setting up ClipStackClient, including CloudKit sync, shared key setup, and everyday use."
+      content="An English guide to using ClipStackClient."
     />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
@@ -23,31 +23,29 @@
       <header class="page-header">
         <h1>ClipStackClient Guide</h1>
         <p class="page-lead">
-          This page explains the basic setup for ClipStackClient, including
-          how to connect it to ClipStack on macOS and how to load synced text
-          on iPhone or iPad.
+          This page explains how to use ClipStackClient.
         </p>
       </header>
 
       <main class="detail-grid">
         <section class="panel">
-          <h2>ClipStackClient is built around a simple flow.</h2>
-          <p class="lede">
-            Keep ClipStack on your Mac as the main place where history is
-            collected, then use ClipStackClient to view and copy that synced
-            text on iPhone or iPad.
+          <h2>ClipStackClient lets you save text on iPhone or iPad while seamlessly checking copy history from your Mac.</h2>
+
+          <h3>Save a local clip</h3>
+          <ol class="feature-list">
+            <li>Tap <strong>+</strong> on the main screen to open New Clip.</li>
+            <li>Choose <strong>Current Clipboard</strong>, or type your own text in <strong>Custom Text</strong>.</li>
+            <li>Turn on <strong>Pinned</strong> if you want to keep it close at hand.</li>
+            <li>Tap <strong>Save</strong> to store it on this device.</li>
+          </ol>
+          <p>
+            Local clips can be filtered from Source with <strong>Local</strong>.
+            You can also delete all local clips from Settings.
           </p>
 
-          <div class="warning-note">
-            <strong>Notice:</strong> ClipStackClient requires
-            <a href="../../clipstack/">ClipStack</a> on macOS.<br />
-            It does not collect clipboard history by itself. It reads the
-            synced history uploaded by the Mac app.
-          </div>
-
-          <h3>Initial setup</h3>
+          <h3>Sync history from your Mac</h3>
           <ol class="feature-list">
-            <li>On your Mac, open ClipStack Settings and turn on <strong>Sync with ClipStackClient</strong>.</li>
+            <li>On your Mac, open ClipStacks Settings and turn on <strong>Sync with ClipStackClient</strong>.</li>
             <li>Keep iCloud Keychain turned on for both your Mac and your iPhone or iPad.</li>
             <li>Return to the main screen and update to load the latest synced text.</li>
           </ol>
@@ -58,15 +56,15 @@
               alt="ClipStack settings showing ClipStackClient sync enabled"
             />
             <figcaption>
-              Turn on <strong>Sync with ClipStackClient</strong>. ClipStack
-              then uploads encrypted history to CloudKit and shares the sync
-              key through iCloud Keychain when available.
+              Turn on <strong>Sync with ClipStackClient</strong>. ClipStacks
+              then updates encrypted synced history and shares the sync key
+              through iCloud Keychain when available.
             </figcaption>
           </figure>
 
           <p>
-            If you turn this switch off later, ClipStack stops updating
-            ClipStackClient through CloudKit.
+            If you turn this switch off later, ClipStacks stops updating
+            ClipStackClient.
           </p>
 
           <h3>Main history view</h3>
@@ -74,6 +72,7 @@
             <li>Tap a row to copy it immediately</li>
             <li>Use search to narrow down the visible list</li>
             <li>Switch between All, Pinned, and URLs</li>
+            <li>Use Source to switch between All, Local, and From Mac</li>
             <li>Use pull-to-refresh or the toolbar update button to check for changes</li>
           </ul>
 
@@ -123,16 +122,15 @@
           <h3>What the sync status card means</h3>
           <ul class="feature-list">
             <li><strong>Up to date</strong>: the latest refresh succeeded</li>
-            <li><strong>Syncing</strong>: the app is checking CloudKit for updates</li>
+            <li><strong>Syncing</strong>: the app is checking for the latest history from your Mac</li>
             <li><strong>Sync failed</strong>: the app could not load the latest synced history</li>
             <li><strong>Sync key unavailable</strong>: the shared iCloud Keychain key has not arrived yet</li>
           </ul>
 
           <div class="support-note">
-            ClipStackClient does not edit history on the iPhone side in the
-            current release.<br />
-            Pinning, deleting, and updating the sync file still happen in
-            ClipStack on your Mac.
+            Local clips can be saved and deleted on iPhone or iPad.<br />
+            Pinning, deleting, and updating synced Mac history still happen in
+            ClipStacks on your Mac.
           </div>
 
           <h3>Settings overview</h3>
@@ -140,6 +138,7 @@
             <li>Check whether a sync key is currently imported</li>
             <li>Check whether the shared sync key is available</li>
             <li>Review the current sync source and last sync time</li>
+            <li>Delete all local clips saved on this device</li>
             <li>Open support and privacy information</li>
           </ul>
         </section>
@@ -149,7 +148,7 @@
           <h2>See also</h2>
           <div class="button-row">
             <a class="button-secondary" href="../">About ClipStackClient</a>
-            <a class="button-secondary" href="../../clipstack/">ClipStack</a>
+            <a class="button-secondary" href="../../clipstack/">ClipStacks</a>
             <a class="button-secondary" href="../support/">Support</a>
             <a class="button-secondary" href="../privacy/">Privacy Policy</a>
           </div>

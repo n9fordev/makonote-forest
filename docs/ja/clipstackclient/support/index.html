@@ -24,7 +24,7 @@
         <p class="eyebrow">サポート</p>
         <h1>ClipStackClient サポート</h1>
         <p class="page-lead">
-          ClipStackClient の利用方法、初期設定、同期設定、
+          ClipStackClient のローカル保存、初期設定、同期設定、
           暗号鍵に関する補足情報です。
         </p>
       </header>
@@ -35,25 +35,37 @@
           <h2>主なサポート項目</h2>
 
           <div class="faq-list">
-            <h3>履歴が見れない・表示されない</h3>
+            <h3>インストール直後に履歴が表示されない</h3>
             <p>
-              ClipStackClient は、Mac で動いている ClipStack と連携して利用します。
+              Mac からの同期履歴は、ClipStack 側で同期を有効にするまで表示されません。
+              ただし、ClipStackClient 単体でもローカルクリップを保存して使えます。
             </p>
             <p>
-              <a href="../guide/">初回セットアップ</a>に従って、初回起動時はClipStackとの連携(暗号鍵の登録)を行ってください。
+              同期履歴を利用する場合は、<a href="../guide/">初回セットアップ</a>に従って、
+              Mac 側 ClipStack との連携を行ってください。
+            </p>
+
+            <h3>iPhone / iPad 側だけでテキストを保存したい</h3>
+            <p>
+              メイン画面左上の <strong>+</strong> から New Clip を開くと、
+              現在のクリップボードや任意入力したテキストをこの端末に保存できます。
+            </p>
+            <p>
+              保存したローカルクリップは Source の <strong>Local</strong> で絞り込めます。
+              不要になった場合は、設定画面からローカルクリップを全削除できます。
             </p>
 
             <h3>iCloud が利用できないと表示される</h3>
             <p>
-              現在のリリースでは、CloudKit 上の同期内容と iCloud Keychain の同期鍵を使います。<br />
+              Mac からの同期履歴を使う場合は、iCloud と iCloud Keychain を利用します。<br />
               端末で iCloud と iCloud Keychain が有効か、同期に使っている環境で同じ Apple ID が
               使われているかを確認してください。
             </p>
 
-            <h3>iPhone 側だけでクリップボード履歴を集めたい</h3>
+            <h3>iPhone 側だけで自動的にクリップボード履歴を集めたい</h3>
             <p>
-              対応していません。ClipStackClientは Mac 側 ClipStack の履歴を閲覧・コピーする連携アプリです。<br />
-              単体の iPhone クリップボード履歴アプリとしては動作しません。
+              現在のリリースでは、バックグラウンドでクリップボード履歴を自動収集する機能には対応していません。<br />
+              残したいテキストは、New Clip 画面から手動でローカル保存してください。
             </p>
           </div>
         </section>

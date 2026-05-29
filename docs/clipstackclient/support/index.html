@@ -24,7 +24,7 @@
         <p class="eyebrow">Support</p>
         <h1>ClipStackClient Support</h1>
         <p class="page-lead">
-          Support notes for using ClipStackClient on iPhone and iPad,<br />
+          Support notes for saving local clips and using ClipStackClient on iPhone and iPad,<br />
           including setup, sync behavior, and encryption key questions.
         </p>
       </header>
@@ -35,14 +35,25 @@
           <h2>Common support topics</h2>
 
           <div class="faq-list">
-            <h3>No clips appear after installing the app</h3>
+            <h3>No synced clips appear after installing the app</h3>
             <p>
-              ClipStackClient depends on a Mac already running ClipStack.
+              Synced Mac history appears after ClipStack on your Mac has sync turned on.
+              You can still save local clips in ClipStackClient without setting up Mac sync.
             </p>
             <p>
               First, make sure ClipStack on macOS is set to sync with
-              ClipStackClient through CloudKit. Then update the main screen in
-              ClipStackClient after iCloud Keychain has shared the sync key.
+              ClipStackClient. Then update the main screen in ClipStackClient
+              after iCloud Keychain has shared the sync key.
+            </p>
+
+            <h3>How do I save text only on my iPhone or iPad?</h3>
+            <p>
+              Tap <strong>+</strong> on the main screen to open New Clip.
+              You can save the current clipboard text or type custom text.
+            </p>
+            <p>
+              Local clips can be filtered with Source > <strong>Local</strong>.
+              If needed, you can delete all local clips from Settings.
             </p>
 
             <h3>The app says the encryption key is missing</h3>
@@ -56,18 +67,17 @@
 
             <h3>The app says iCloud is unavailable</h3>
             <p>
-              The current release reads synced history from CloudKit and waits
-              for the sync key through iCloud Keychain.<br />
+              Synced Mac history uses iCloud and iCloud Keychain.<br />
               Make sure iCloud and iCloud Keychain are enabled on the device
               and that the same Apple Account is being used for the synced
               environment.
             </p>
 
-            <h3>Can ClipStackClient collect iPhone clipboard history by itself?</h3>
+            <h3>Can ClipStackClient collect iPhone clipboard history automatically?</h3>
             <p>
-              No. The current release is a viewer and copy app for the
-              Mac app only.<br />
-              It does not run as a standalone iPhone clipboard recorder.
+              Not in the current release. ClipStackClient does not collect
+              clipboard history in the background.<br />
+              Save text manually from the New Clip screen when you want to keep it.
             </p>
           </div>
         </section>

@@ -23,27 +23,27 @@
       <header class="page-header">
         <h1>ClipStackClient ガイド</h1>
         <p class="page-lead">
-          このページでは、ClipStackClient を ClipStack と連携させる手順と、
-          iPhone / iPad 上での基本的な使い方をまとめています。
+          このページでは、ClipStackClient の利用方法をまとめています。
         </p>
       </header>
 
       <main class="detail-grid">
         <section class="panel">
-          <h2>ClipStackClientは、MacとiOS間のコピーを快適に行うアプリです。</h2>
-          <p class="lede">
-            履歴の本体は Mac 側の ClipStack に置き、ClipStackClient は
-            必要なときにだけ開いて、同期済みクリップを探してコピーする
-            モバイル向けの連携アプリとして使います。
+          <h2>ClipStackClient は、iPhone / iPad 上でテキストを保存しつつ、 Mac のコピー履歴をシームレスに確認できます。</h2>
+
+          <h3>ローカルクリップを保存する</h3>
+          <ol class="feature-list">
+            <li>メイン画面左上の <strong>+</strong> をタップして New Clip 画面を開く</li>
+            <li><strong>Current Clipboard</strong> を選ぶか、<strong>Custom Text</strong> に任意のテキストを入力する</li>
+            <li>必要であれば <strong>Pinned</strong> をオンにする</li>
+            <li>右上の <strong>Save</strong> をタップして、この端末に保存する</li>
+          </ol>
+          <p>
+            保存したローカルクリップは、Source の <strong>Local</strong> から絞り込めます。
+            設定画面からローカルクリップをまとめて削除することもできます。
           </p>
 
-          <div class="warning-note">
-            <strong>⚠ 注意:</strong> ClipStackClient を使うには、macOS 版 <a href="../../clipstack/">ClipStack</a> が必要です。<br />
-            このアプリ単体では履歴を収集せず、Mac 側で作成・更新された内容を
-            iPhone/iPad で利用するためのアプリとして動作します。
-          </div>
-
-          <h3>初回セットアップ</h3>
+          <h3>Mac 側の履歴を同期する</h3>
           <ol class="feature-list">
             <li>Mac の ClipStack の設定画面で <strong>Sync with ClipStackClient</strong> をオンにする</li>
             <li>Mac と iPhone / iPad の両方で iCloud Keychain を有効にしておく</li>
@@ -57,13 +57,13 @@
             />
             <figcaption>
               まず Mac の ClipStack 側で<strong>Sync with ClipStackClient</strong> をオンにします。
-              暗号化された履歴は CloudKit へ送られ、同期鍵は iCloud Keychain 経由で共有されます。
+              暗号化された同期履歴が更新され、同期鍵は iCloud Keychain 経由で共有されます。
             </figcaption>
           </figure>
 
           <p>
             このスイッチをオフにすると、ClipStack は ClipStackClient との
-            CloudKit 同期を停止します。
+            同期を停止します。
           </p>
 
           <h3>メイン画面の基本操作</h3>
@@ -71,6 +71,7 @@
             <li>一覧行をタップするとそのままコピーできる</li>
             <li>検索バーで表示中の一覧を絞り込める</li>
             <li>All / Pinned / URLs を切り替えられる</li>
+            <li>Source から All / Local / From Mac を切り替えられる</li>
             <li>画面を引き下げる操作と右上ボタンで更新できる</li>
           </ul>
 
@@ -111,20 +112,21 @@
           <h3>同期ステータスの見方</h3>
           <ul class="feature-list">
             <li><strong>Up to date</strong>: 最新の同期が成功している状態</li>
-            <li><strong>Syncing</strong>: CloudKit 上の最新内容を確認している状態</li>
+            <li><strong>Syncing</strong>: Mac からの最新履歴を確認している状態</li>
             <li><strong>Sync failed</strong>: 最新の同期内容を読めなかった状態</li>
             <li><strong>Sync key unavailable</strong>: 共有された同期鍵がまだ届いていない状態</li>
           </ul>
 
           <div class="support-note">
-            現在のリリースでは、iPhone 側から履歴を編集しません。<br />
-            ピン留め変更、削除、同期ファイルの更新は Mac 側 ClipStack で行ってください。
+            ローカルクリップは iPhone / iPad 側で保存・削除できます。<br />
+            Mac から同期された履歴のピン留め変更、削除、更新は Mac 側 ClipStack で行ってください。
           </div>
 
           <h3>設定項目</h3>
           <ul class="feature-list">
             <li>共有された同期鍵が利用可能か確認する</li>
             <li>現在の同期元と最終同期時刻を確認する</li>
+            <li>この端末に保存したローカルクリップを全削除する</li>
             <li>サポート情報とプライバシーポリシーを開く</li>
           </ul>
         </section>
