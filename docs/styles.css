@@ -27,6 +27,11 @@ body {
   color: var(--ink);
   font-family: "Avenir Next", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
   line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -134,13 +139,9 @@ h3 {
 .content-grid,
 .detail-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 24px;
   margin-top: 28px;
-}
-
-.content-grid,
-.detail-grid {
-  grid-template-columns: 1fr;
 }
 
 .card,
@@ -335,6 +336,7 @@ h3 {
 .button-secondary {
   display: inline-flex;
   align-items: center;
+  max-width: 100%;
   min-height: 38px;
   padding: 0 12px;
   border: 1px solid var(--line-strong);
@@ -394,6 +396,8 @@ h3 {
   font-size: 1.08rem;
   font-weight: 600;
   letter-spacing: 0.08em;
+  padding: 20px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -453,10 +457,6 @@ h3 {
   max-width: 520px;
 }
 
-.guide-figure.primary img {
-  width: min(100%, 600px);
-}
-
 .guide-figure.narrow img {
   width: min(100%, 300px);
 }
@@ -513,6 +513,7 @@ h3 {
   border-collapse: collapse;
   border: 1px solid var(--line);
   background: #fff;
+  table-layout: fixed;
 }
 
 .shortcut-table th,
@@ -594,7 +595,11 @@ h3 {
   }
 
   .showcase-card {
-    padding: 14px 14px 18px;
+    padding: 10px 10px 14px;
+  }
+
+  .showcase-track {
+    padding: 8px;
   }
 
   .showcase-card.is-phone .showcase-track {
@@ -608,5 +613,65 @@ h3 {
   .showcase-arrow {
     width: 32px;
     height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    width: min(100% - 16px, var(--max-width));
+  }
+
+  .card,
+  .panel {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .button-row {
+    gap: 8px;
+  }
+
+  .button-row .button,
+  .button-row .button-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .shortcut-table,
+  .shortcut-table tbody,
+  .shortcut-table tr,
+  .shortcut-table th,
+  .shortcut-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .shortcut-table tr {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .shortcut-table th,
+  .shortcut-table td {
+    border-bottom: 0;
+    padding: 9px 10px;
+  }
+
+  .shortcut-table td {
+    padding-top: 7px;
+  }
+
+  .shortcut-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .showcase-card.is-phone .showcase-track {
+    max-width: 260px;
   }
 }
