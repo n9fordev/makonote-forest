@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CopyPouch</title>
+    <title>CopyPouch Pocket</title>
     <meta
       name="description"
-      content="CopyPouch is a fast clipboard history app for macOS with support for text, links, and images."
+      content="CopyPouch Pocket lets you save text on iPhone or iPad and reuse synced CopyPouch history from your Mac."
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
@@ -17,30 +17,29 @@
         <nav class="language-switch" aria-label="Language switcher">
           <span class="current">English</span>
           <span>/</span>
-          <a href="../ja/clipstack/">日本語</a>
+          <a href="../ja/clipstackclient/">日本語</a>
         </nav>
       </div>
       <header class="page-header">
-        <p class="eyebrow">macOS application</p>
+        <p class="eyebrow">iPhone and iPad application</p>
         <div class="app-title-row">
-          <img class="app-title-icon" src="../assets/clipstack/app-icon.png" alt="CopyPouch app icon" />
-          <h1>CopyPouch</h1>
+          <img class="app-title-icon" src="../assets/clipstackclient/app-icon.png" alt="CopyPouch Pocket app icon" />
+          <h1>CopyPouch Pocket</h1>
         </div>
         <p class="page-lead">
-          CopyPouch is a clipboard history utility for macOS.<br />
-          It keeps recent text, links, and images available from a single
-          panel.
+          CopyPouch Pocket lets you save and reuse text locally on iPhone or iPad.<br />
+          When paired with CopyPouch on your Mac, it can also show synced text
+          history in the same view.
         </p>
         <div class="button-row">
-          <a class="button" href="https://apps.apple.com/us/app/copypouch/id6769303222" target="_blank" rel="noopener noreferrer">View on the App Store</a>
           <a class="button-secondary" href="./guide/">How to use</a>
           <a class="button-secondary" href="./support/">Support</a>
           <a class="button-secondary" href="./privacy/">Privacy Policy</a>
         </div>
       </header>
 
-      <section class="app-showcase" aria-label="CopyPouch promotional image">
-        <div class="showcase-card" data-showcase-carousel>
+      <section class="app-showcase" aria-label="CopyPouch Pocket promotional image">
+        <div class="showcase-card is-phone" data-showcase-carousel>
           <div class="showcase-track">
             <div class="showcase-controls" aria-hidden="true">
               <button class="showcase-arrow" type="button" data-carousel-prev>&larr;</button>
@@ -50,17 +49,17 @@
               <div class="showcase-slides">
                 <div class="showcase-slide">
                   <div class="showcase-frame">
-                    <img src="../assets/clipstack/store/search-en.png" alt="CopyPouch search view screenshot" />
+                    <img src="../assets/clipstackclient/store/hero-en.png" alt="CopyPouch Pocket promotional screenshot" />
                   </div>
                 </div>
                 <div class="showcase-slide">
                   <div class="showcase-frame">
-                    <img src="../assets/clipstack/store/pin-en.png" alt="CopyPouch pin and search screenshot" />
+                    <img src="../assets/clipstackclient/store/copy-en.png" alt="CopyPouch Pocket copy feature screenshot" />
                   </div>
                 </div>
                 <div class="showcase-slide">
                   <div class="showcase-frame">
-                    <img src="../assets/clipstack/store/hero-en.png" alt="CopyPouch promotional screenshot" />
+                    <img src="../assets/clipstackclient/store/pinned-en.png" alt="CopyPouch Pocket pinned items screenshot" />
                   </div>
                 </div>
               </div>
@@ -77,20 +76,23 @@
       <main class="detail-grid">
         <section class="panel">
           <p class="section-kicker">Overview</p>
-          <h2>A clipboard history tool that fits naturally into everyday work.</h2>
+          <h2>A lightweight companion that brings the CopyPouch flow to mobile.</h2>
           <p class="lede">
-            CopyPouch helps cut down on the back-and-forth of repeated copying
-            and pasting between apps.
+            Save text you want to keep on iPhone or iPad,<br />
+            and seamlessly reuse items copied on your Mac.
           </p>
 
           <ul class="feature-list">
-            <li>Pull up history quickly from a searchable panel</li>
-            <li>Works with text, links, and images</li>
-            <li>Keep important items pinned</li>
-            <li>Launch instantly with a hotkey</li>
-            <li>Preview images before reusing them</li>
-            <li>Check the same history on iPhone or iPad with <a href="../clipstackclient/">CopyPouch Pocket</a></li>
+            <li>Copy clips with one tap</li>
+            <li>Automatic sync from CopyPouch on macOS</li>
+            <li>Browse All, Pinned, and URLs</li>
+            <li>Search history on the device</li>
           </ul>
+
+          <div class="warning-note">
+            <strong>Note:</strong> To use sync with <a href="../clipstack/">CopyPouch</a> on macOS,<br />
+            sign in on iPhone or iPad with the same iCloud account used on your Mac.
+          </div>
         </section>
 
         <aside class="panel">
@@ -98,23 +100,24 @@
           <dl class="meta-list">
             <div>
               <dt>Platform</dt>
-              <dd>macOS<br />macOS 14.6 or later</dd>
+              <dd>iPhone and iPad<br />iOS / iPadOS 17.6 or later</dd>
+            </div>
+            <div>
+              <dt>Sync source</dt>
+              <dd>Synced history updated by CopyPouch on your Mac</dd>
             </div>
             <div>
               <dt>Content types</dt>
-              <dd>Text, links, and images</dd>
-            </div>
-            <div>
-              <dt>Data handling</dt>
-              <dd>Local-only history storage</dd>
+              <dd>Text only in the current release</dd>
             </div>
             <div>
               <dt>Current scope</dt>
-              <dd>No account, no developer-operated backend, optional CloudKit sync for CopyPouch Pocket</dd>
+              <dd>Synced history viewer plus lightweight local clip saving</dd>
             </div>
           </dl>
 
           <div class="button-row">
+            <a class="text-link" href="./guide/">Setup guide</a>
             <a class="text-link" href="./support/">Read support FAQ</a>
             <a class="text-link" href="./privacy/">Read privacy policy</a>
           </div>

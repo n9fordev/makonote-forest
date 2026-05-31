@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CopyPouch</title>
+    <title>CopyPouch Pocket</title>
     <meta
       name="description"
-      content="CopyPouch は、テキスト・リンク・画像に対応した macOS 向けクリップボード履歴アプリです。"
+      content="CopyPouch Pocket は、同期された CopyPouch 履歴を iPhone / iPad で閲覧してコピーでき、ローカル保存もできるアプリです。"
     />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
@@ -15,30 +15,30 @@
       <div class="topbar">
         <p class="eyebrow"><a class="brand-link" href="../../ja/">孫の手の森</a></p>
         <nav class="language-switch" aria-label="言語切り替え">
-          <a href="../../clipstack/">English</a>
+          <a href="../../clipstackclient/">English</a>
           <span>/</span>
           <span class="current">日本語</span>
         </nav>
       </div>
       <header class="page-header">
-        <p class="eyebrow">macOS アプリ</p>
+        <p class="eyebrow">iPhone / iPad アプリ</p>
         <div class="app-title-row">
-          <img class="app-title-icon" src="../../assets/clipstack/app-icon.png" alt="CopyPouch のアプリアイコン" />
-          <h1>CopyPouch</h1>
+          <img class="app-title-icon" src="../../assets/clipstackclient/app-icon.png" alt="CopyPouch Pocket のアプリアイコン" />
+          <h1>CopyPouch Pocket</h1>
         </div>
         <p class="page-lead">
-          CopyPouch は、コピーしたテキスト、リンク、画像を 1 つのパネルからすばやく再利用できる macOS 向けクリップボード履歴ユーティリティです。
+          CopyPouch Pocket は、iPhone / iPad 上でテキストをローカル保存し、すばやく再利用できるアプリです。<br />
+          Mac 側の CopyPouch と連携すると、同期されたテキスト履歴も同じ画面から確認できます。
         </p>
         <div class="button-row">
-          <a class="button" href="https://apps.apple.com/us/app/copypouch/id6769303222" target="_blank" rel="noopener noreferrer">App Store で見る</a>
           <a class="button-secondary" href="./guide/">使い方</a>
           <a class="button-secondary" href="./support/">サポート</a>
           <a class="button-secondary" href="./privacy/">プライバシーポリシー</a>
         </div>
       </header>
 
-      <section class="app-showcase" aria-label="CopyPouch 紹介画像">
-        <div class="showcase-card" data-showcase-carousel>
+      <section class="app-showcase" aria-label="CopyPouch Pocket 紹介画像">
+        <div class="showcase-card is-phone" data-showcase-carousel>
           <div class="showcase-track">
             <div class="showcase-controls" aria-hidden="true">
               <button class="showcase-arrow" type="button" data-carousel-prev>&larr;</button>
@@ -48,17 +48,17 @@
               <div class="showcase-slides">
                 <div class="showcase-slide">
                   <div class="showcase-frame">
-                    <img src="../../assets/clipstack/store/search-ja.png" alt="CopyPouch の検索機能紹介画像" />
+                    <img src="../../assets/clipstackclient/store/hero-ja.png" alt="CopyPouch Pocket のストア向け紹介画像" />
                   </div>
                 </div>
                 <div class="showcase-slide">
                   <div class="showcase-frame">
-                    <img src="../../assets/clipstack/store/pin-ja.png" alt="CopyPouch のピン留め機能紹介画像" />
+                    <img src="../../assets/clipstackclient/store/copy-ja.png" alt="CopyPouch Pocket のコピー機能紹介画像" />
                   </div>
                 </div>
                 <div class="showcase-slide">
                   <div class="showcase-frame">
-                    <img src="../../assets/clipstack/store/hero-ja.png" alt="CopyPouch のストア向け紹介画像" />
+                    <img src="../../assets/clipstackclient/store/pinned-ja.png" alt="CopyPouch Pocket のピン留め機能紹介画像" />
                   </div>
                 </div>
               </div>
@@ -75,19 +75,23 @@
       <main class="detail-grid">
         <section class="panel">
           <p class="section-kicker">概要</p>
-          <h2>日常的な作業で利用しやすいクリップボード履歴ツールです。</h2>
+          <h2>CopyPouch の流れをモバイルへ広げる、軽量な連携アプリです。</h2>
           <p class="lede">
-            CopyPouch は、何度もアプリを往復してコピー＆ペーストする煩雑さを解消します。
+            iPhone / iPad 上で残しておきたいテキストを保存しながら、</br>
+            Mac 側でコピーしたアイテムもシームレスに再利用できます。
           </p>
 
           <ul class="feature-list">
-            <li>検索付きパネルからサっと履歴を呼び出し</li>
-            <li>テキスト、リンク、画像に対応</li>
-            <li>重要な項目はピン留めで永続化</li>
-            <li>ホットキーで即時起動</li>
-            <li>画像のプレビュー機能</li>
-            <li><a href="../clipstackclient/">CopyPouch Pocket</a> と連携し、iOS上でも履歴を確認可能</li>
+            <li>1 タップですぐコピー</li>
+            <li>macOS 版 CopyPouch からの自動同期</li>
+            <li>All / Pinned / URLs 機能</li>
+            <li>履歴の検索</li>
           </ul>
+
+          <div class="warning-note">
+            <strong>⚠ 注意:</strong> macOS 版 <a href="../../clipstack/">CopyPouch</a> との同期機能を利用するためには</br>
+            iPhone / iPad 上で Mac側と同じ iCloud アカウントでログインする必要があります。
+          </div>
         </section>
 
         <aside class="panel">
@@ -95,24 +99,20 @@
           <dl class="meta-list">
             <div>
               <dt>対応環境</dt>
-              <dd>macOS<br />macOS 14.6 以降</dd>
+              <dd>iPhone / iPad<br />iOS / iPadOS 17.6 以降</dd>
+            </div>
+            <div>
+              <dt>同期元</dt>
+              <dd>Mac 側の CopyPouch が更新する同期データ</dd>
             </div>
             <div>
               <dt>対応データ</dt>
-              <dd>テキスト、リンク、画像</dd>
-            </div>
-            <div>
-              <dt>データの扱い</dt>
-              <dd>ローカル保存のみ</dd>
-            </div>
-            <div>
-              <dt>現在の範囲</dt>
-              <dd>アカウント不要、開発者サーバー連携なし、CopyPouch Pocket 向けの CloudKit 同期に対応</dd>
+              <dd>現在のリリースではテキストのみ</dd>
             </div>
           </dl>
 
           <div class="button-row">
-            <a class="text-link" href="./guide/">使い方を見る</a>
+            <a class="text-link" href="./guide/">セットアップを見る</a>
             <a class="text-link" href="./support/">サポート FAQ を見る</a>
             <a class="text-link" href="./privacy/">プライバシーポリシーを読む</a>
           </div>

@@ -30,15 +30,44 @@
       <main class="content-grid">
         <section class="card app-card">
           <p class="card-kicker">公開中のアプリ</p>
-          <h2>ClipStacks</h2>
+          <div class="app-title-row">
+            <img
+              class="app-title-icon"
+              src="../assets/clipstack/app-icon.png"
+              alt="CopyPouch app icon"
+            />
+            <h2>CopyPouch</h2>
+          </div>
           <p>
             コピーしたテキスト、リンク、画像を再利用しやすくする
             macOS 向けクリップボード履歴ユーティリティです。
           </p>
           <div class="card-actions">
             <a class="button" href="./clipstack/">アプリページを見る</a>
+            <a class="text-link" href="https://apps.apple.com/us/app/copypouch/id6769303222" target="_blank" rel="noopener noreferrer">App Store</a>
             <a class="text-link" href="./clipstack/support/">サポート</a>
             <a class="text-link" href="./clipstack/privacy/">プライバシー</a>
+          </div>
+        </section>
+
+        <section class="card app-card" data-app-release-card="copypouch-pocket">
+          <p class="card-kicker">連携アプリ</p>
+          <div class="app-title-row">
+            <img
+              class="app-title-icon"
+              src="../assets/clipstackclient/app-icon.png"
+              alt="CopyPouch Pocket app icon"
+            />
+            <h2>CopyPouch Pocket</h2>
+          </div>
+          <p>
+            Mac の CopyPouch と連携し、同期されたテキスト履歴を iPhone / iPad で
+            閲覧して 1 タップでコピーできる無料 companion app です。
+          </p>
+          <div class="card-actions">
+            <a class="button" href="./clipstackclient/">アプリページを見る</a>
+            <a class="text-link" href="./clipstackclient/support/">サポート</a>
+            <a class="text-link" href="./clipstackclient/privacy/">プライバシー</a>
           </div>
         </section>
       </main>
@@ -50,5 +79,6 @@
         <p>© 2026 n9fordev. All rights reserved.</p>
       </footer>
     </div>
+    <script src="../app-release-status.js"></script>
   </body>
 </html>
