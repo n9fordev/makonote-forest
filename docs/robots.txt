@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://n9fordev.github.io/makonote-forest/sitemap.xml
